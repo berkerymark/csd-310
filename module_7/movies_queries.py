@@ -66,5 +66,5 @@ director = cursor.fetchall()
 print("-- DISPLAYING Director RECORDS in Order --")
 
 for director in director:
-	print("Film Name: {}\nDirector: {}\n".format(director[0], director[1]))#, director[2]))
+	print("Film Name: {}\nDirector: {}\n".format(director[0], director[1]))
 	
