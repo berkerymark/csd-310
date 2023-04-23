@@ -36,7 +36,7 @@ studio = cursor.fetchall()
 print("-- DISPLAYING Studio RECORDS --")
 
 for studio in studio:
-	print("Studio ID: {}\nStudio Name: {}\n".format(studio[0], studio[1]))#, studio[2]))
+	print("Studio ID: {}\nStudio Name: {}\n".format(studio[0], studio[1]))
 
 
 cursor.execute("SELECT genre_id, genre_name FROM genre")
@@ -46,7 +46,7 @@ genre = cursor.fetchall()
 print("-- DISPLAYING Genre RECORDS --")
 
 for genre in genre:
-	print("Genre ID: {}\nGenre Name: {}\n".format(genre[0], genre[1]))#, genre[2]))
+	print("Genre ID: {}\nGenre Name: {}\n".format(genre[0], genre[1]))
 
 
 cursor.execute("SELECT film_name, film_runtime FROM film WHERE film_runtime < 120")
@@ -67,6 +67,4 @@ print("-- DISPLAYING Director RECORDS in Order --")
 
 for director in director:
 	print("Film Name: {}\nDirector: {}\n".format(director[0], director[1]))#, director[2]))
-
-#finally:
-#	db.close()	
+	
