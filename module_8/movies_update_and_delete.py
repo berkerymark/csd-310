@@ -82,7 +82,7 @@ def update_films(cursor, title):
 def delete_films(cursor, title):
 
     cursor.execute("DELETE FROM film WHERE film_name = 'Gladiator'")
-    db.commit
+    db.commit()
 
     cursor.execute('''SELECT film_name AS Name, film_director AS Director, genre_name AS Genre, studio_name AS
             'Studio Name' FROM film INNER JOIN genre ON film.genre_id = genre.genre_id INNER JOIN studio ON 
